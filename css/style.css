@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    background-image: url(../images/background.jpg)
+    
+    
+}
+
+
+h4 {
+
+color: aliceblue;    
+    
+}
+
+button {
+     
+    border: none;
+    color: black;
+    text-align: center;
+    background-color: azure;
+    margin: 4px 2px;
+    padding: 7.5px 16px;
+    
+    
+}
+
+button:hover {
+    
+    border: solid 1px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+#cafes1, #cafes2, #cafes3 {
+    
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    
+    width: 10%;
+    height: 10%;
+    
+}
+
+#cafes1:hover, #cafes2:hover, #cafes3:hover {
+
+    border: solid 1px;
+    cursor: pointer;
+    
+}
+
+#maid {
+    width: 15%;
+    float: right;
+    height: auto;
+}
+
+#cafes1 {
+    
+    background-size: cover;
+    background-image: url(../images/cofve.jpg)
+}
+
+#cafes2 {
+    
+    background-size: cover;
+    background-image: url(../images/bacon.jpg)
+}
+
+#cafes3 {
+    
+    background-size: cover;
+    background-image: url(../images/carajillo.jpg)
+}

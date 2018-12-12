@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+    
+            <title>MaidBot's Cofveves</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="css/style.css">
+            <script src="js/scripts.js" ></script>
+    
+    </head>
+
+    <body>
+    <!-- -----------------------------------------------MASCOTA------------------------------------------------- -->
+    
+        <img id="maid" onmouseover="emote_sacar()" onmouseout="emote_volver()" onclick="musica_pausar()" src="images/cumpoweredmaidrobot1.png" title="Parar musica" >
+
+    <!-- -----------------------------------------------BOTONES------------------------------------------------- -->
+    
+        <br> <br>
+        
+        <div id="cafes1" onclick="seleccion_cafe(2.5, 'Leche con cafe')" title="Leche con Café" ></div>
+    
+        <div id="cafes2" onclick="seleccion_cafe(3.5, 'Cafe con bacon')" title="Cafe con bacon" ></div>
+    
+        <div id="cafes3" onclick="seleccion_cafe(4.5, 'Carajillo')" title="Carajillo" ></div>
+    
+        <br> <br> <br> <br> <br> <br> <br> <br> <br>
+   
+        
+        <div id="botones">
+        
+            <button id="" onclick="cantidad_enviar(7)" >7</button>
+            
+            <button id="" onclick="cantidad_enviar(8)" >8</button>
+            
+            <button id="" onclick="cantidad_enviar(9)" >9</button>
+
+             <br> 
+            
+            <button id="" onclick="cantidad_enviar(4)" >4</button>
+            
+            <button id="" onclick="cantidad_enviar(5)" >5</button>
+            
+            <button id="" onclick="cantidad_enviar(6)" >6</button>
+            
+             <br>
+            
+            <button id="" onclick="cantidad_enviar(1)" >1</button>
+            
+            <button id="" onclick="cantidad_enviar(2)" >2</button>
+            
+            <button id="" onclick="cantidad_enviar(3)" >3</button>
+            
+             <br>
+            
+            <button id="" onclick="cantidad_reset(0)" >C</button>
+            
+            <button id="" onclick="cantidad_enviar(0)" >0</button>
+    
+            <button id="" onclick="fun_enter(); calcular_precio_sucio();" >E</button>
+
+             <br>
+            
+            <button id="cprecio" onclick="calcular_precio_sucio(); calcular_precio();" >Calcular precio</button>
+            
+        </div>
+            
+        
+         <br> <br> <br>
+        
+            
+        
+    <!-- -----------------------------------------------TEXTO DE RESULTADOS------------------------------------------------- -->
+        <div id="cuenta" > 
+    
+            <h4 id="seleccion_final"></h4>
+            <h4 id="seleccion_producto"></h4> 
+            <h4 id="precio_sucio"></h4> 
+    
+        </div>
+        
+        <br>
+        
+        <div id="cuenta1" > 
+    
+            <h4  id="seleccion_final1"></h4>
+            <h4  id="seleccion_producto1"></h4> 
+            <h4  id="precio_sucio1"></h4> 
+    
+        </div>
+        
+        <br>
+        
+        <div id="cuenta2" > 
+    
+            <h4  id="seleccion_final2"></h4>
+            <h4  id="seleccion_producto2"></h4> 
+            <h4  id="precio_sucio2"></h4> 
+    
+        </div>
+        
+        <div id="cuenta_final" > 
+
+            <h4 id="precio_final"></h4> 
+    
+        </div>
+        
+    <!-- -----------------------------------------------MUSICA BACKGROUND------------------------------------------------- -->
+        <audio id="musica" autoplay loop hidden="true" >
+            <source src="audio/evan.mp3">
+            <source src="audio/numb.mp3">
+            <source src="audio/craw.mp3">
+        </audio> 
+    
+        <h4 id="enter"></h4>
+    </body>
+</html>
